@@ -20,9 +20,10 @@ I know it's tough love, but that's the way it's got to be.
 local icol = Color( 255, 255, 255, 255 ) 
 if CLIENT then
 
-	killicon.Add(  "m9k_ak47_broken",		"vgui/hud/m9k_ak47", icol  )
-	killicon.Add(  "m9k_famas_broken",		"vgui/hud/m9k_famas", icol  )
-	killicon.Add(  "m9k_winchester73_broken", "vgui/hud/m9k_winchester73", icol  )
+	killicon.Add(  "m9k_ak47_broken",		"vgui/hud/m9k_ak47_broken", icol  )
+	killicon.Add(  "m9k_famas_broken",		"vgui/hud/m9k_famas_broken", icol  )
+	killicon.Add(  "m9k_winchester73_broken", "vgui/hud/m9k_winchester73_broken", icol  )
+	killicon.Add(  "m9k_m4a1_broken", 		"vgui/hud/m9k_m4a1_broken", icol )
 
 end
 
@@ -200,6 +201,64 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/fokku_tc_famas/famas_forearm.mp3" 
 })
+
+//m4a1
+sound.Add({
+	name = 			"Dmgfok_M4A1.Single",
+	channel = 		CHAN_USER_BASE+10,
+	volume = 		1.0,
+	sound = 			"weapons/dmg_m4a1/m4a1_unsil-1.wav"
+})
+
+sound.Add({
+	name = 			"Dmgfok_M4A1.Silencer_Off",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = 			"weapons/dmg_m4a1/m4a1_silencer_off.mp3"
+})
+
+sound.Add({
+	name = 			"Dmgfok_M4A1.Silencer_On",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = 			"weapons/dmg_m4a1/m4a1_silencer_on.mp3"
+})
+
+sound.Add({
+	name = 			"Dmgfok_M4A1.Clipout",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = 			"weapons/dmg_m4a1/m4a1_clipout.mp3"
+})
+
+sound.Add({
+	name = 			"Dmgfok_M4A1.Clipin",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = 			"weapons/dmg_m4a1/m4a1_clipin.mp3"
+})
+
+sound.Add({
+	name = 			"Dmgfok_M4A1.Boltrelease",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = 			"weapons/dmg_m4a1/m4a1_boltrelease.mp3"
+})
+
+sound.Add({
+	name = 			"Dmgfok_M4A1.Boltrelease2",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = 			"weapons/dmg_m4a1/m4a1_boltrelease_silenced.mp3"
+})
+
+sound.Add({
+	name = 			"Dmgfok_M4A1.Boltpull",
+	channel = 		CHAN_ITEM,
+	volume = 		1.0,
+	sound = 			"weapons/dmg_m4a1/m4a1_boltpull.mp3"
+})
+
 
 m9knpw = {}
 table.insert(m9knpw, "m9k_davy_crockett_explo")
